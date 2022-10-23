@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -9,7 +11,12 @@ public class PlanningApplication {
      */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String prompt = "1 - Show all jobs in the catalog.\n2 - Add a new job.\n" +
+        readData();
+        for (Job job :
+                Job.listOfJobs) {
+            System.out.println(job);
+        }
+        /*String prompt = "1 - Show all jobs in the catalog.\n2 - Add a new job.\n" +
                 "3-6 - To be implemented.\n7 - Quit application.\n";
         System.out.println(prompt);
 
@@ -54,5 +61,40 @@ public class PlanningApplication {
             System.out.println(prompt);
             command = in.nextInt();
         }
+        */
+
+    }
+
+    public static void readData(){
+        try(Scanner in = new Scanner(new File("joblist.txt"))){
+            while(in.hasNextLine()) {
+                Address address = new Address(in.nextLine());
+                String description = in.nextLine();
+                Scanner instruments = new Scanner(in.nextLine());
+                instruments.useDelimiter("; ");
+                ArrayList<Equipment> equipmentArrayList = new ArrayList<>();
+                while (instruments.hasNext()) {
+                    Scanner instrument = new Scanner(instruments.next());
+                    instrument.useDelimiter(", ");
+                    String nameInstrument = instrument.next();
+                    switch (nameInstrument) {
+                        case "JackHammer":
+                            equipmentArrayList.add(new JackHammer(instrument.next()));
+                            break;
+                        case "Scaffolding":
+                            equipmentArrayList.add(new ScaffoldingTower(instrument.next()));
+                            break;
+                        case "ConcreteMixer":
+                            equipmentArrayList.add(new ConcreteMixer((instrument.next())));
+                            break;
+                        case "Torch":
+                            equipmentArrayList.add(new Torch(instrument.next()));
+                            break;
+                    }
+                }
+                Date date = new Date(in.nextLine());
+                Job.listOfJobs.add(new Job(address, description, equipmentArrayList, date));
+            }
+        } catch (IOException ignored){}
     }
 }

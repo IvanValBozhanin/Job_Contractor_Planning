@@ -1,4 +1,5 @@
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Address {
     private String street;
@@ -11,6 +12,15 @@ public class Address {
         this.number = number;
         this.zipCode = zipCode;
         this.city = city;
+    }
+
+    public Address(String street) {
+        Scanner in = new Scanner(street);
+        in.useDelimiter("; ");
+        this.street = in.next();
+        this.number = in.nextInt();
+        this.zipCode = in.next();
+        this.city = in.next();
     }
 
     @Override

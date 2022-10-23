@@ -1,4 +1,5 @@
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Date {
     private int day;
@@ -9,6 +10,15 @@ public class Date {
         this.day = day;
         this.month = month;
         this.year = year;
+    }
+
+    public Date(String nextLine) {
+        Scanner in = new Scanner(nextLine);
+        in.useDelimiter("-");
+        this.day = in.nextInt();
+        this.month = in.nextInt();
+        this.year = in.nextInt();
+
     }
 
     @Override

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -8,6 +9,7 @@ public class Job {
     private List<Equipment> requiredEquipment;
     private Date plannedDate;
     private static int jobTotal = 0;
+    protected static ArrayList<Job> listOfJobs = new ArrayList<>();
 
     public Job(Address location, String description, List<Equipment> requiredEquipment, Date plannedDate) {
         this.location = location;

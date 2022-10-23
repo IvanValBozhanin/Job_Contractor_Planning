@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added out files.">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/AddressTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/DateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/EquipmentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/JobCatalogTest.java" afterDir="false" />
+    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added Job Catalog unit testing.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +152,7 @@
       <workItem from="1666034865774" duration="629000" />
       <workItem from="1666123564405" duration="1160000" />
       <workItem from="1666169068798" duration="28000" />
-      <workItem from="1666620187296" duration="1025000" />
+      <workItem from="1666620187296" duration="2486000" />
     </task>
     <task id="LOCAL-00001" summary="Added .gitignore file.">
       <created>1665943191995</created>
@@ -227,7 +217,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666124119580</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added Date and Address unit testing.">
+      <created>1666189375873</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666189375873</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added Equipment unit testing.">
+      <created>1666275813563</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666275813563</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added Job Catalog unit testing.">
+      <created>1666362233463</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666362233463</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +263,10 @@
     <MESSAGE value="Added Job Catalog class." />
     <MESSAGE value="Added Power Supply interface." />
     <MESSAGE value="Added out files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added out files." />
+    <MESSAGE value="Added Date and Address unit testing." />
+    <MESSAGE value="Added Equipment unit testing." />
+    <MESSAGE value="Added Job Catalog unit testing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Job Catalog unit testing." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
