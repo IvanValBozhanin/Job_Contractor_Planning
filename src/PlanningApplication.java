@@ -78,18 +78,10 @@ public class PlanningApplication {
                     instrument.useDelimiter(", ");
                     String nameInstrument = instrument.next();
                     switch (nameInstrument) {
-                        case "JackHammer":
-                            equipmentArrayList.add(new JackHammer(instrument.next()));
-                            break;
-                        case "Scaffolding":
-                            equipmentArrayList.add(new ScaffoldingTower(instrument.next()));
-                            break;
-                        case "ConcreteMixer":
-                            equipmentArrayList.add(new ConcreteMixer((instrument.next())));
-                            break;
-                        case "Torch":
-                            equipmentArrayList.add(new Torch(instrument.next()));
-                            break;
+                        case "JackHammer" -> equipmentArrayList.add(new JackHammer(instrument.next()));
+                        case "Scaffolding" -> equipmentArrayList.add(new ScaffoldingTower(instrument.next()));
+                        case "ConcreteMixer" -> equipmentArrayList.add(new ConcreteMixer((instrument.next())));
+                        case "Torch" -> equipmentArrayList.add(new Torch(instrument.next()));
                     }
                 }
                 Date date = new Date(in.nextLine());

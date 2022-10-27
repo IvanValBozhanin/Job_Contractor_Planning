@@ -21,7 +21,6 @@
     Authors: Thomas Overklift, Andy Zaidman & Ruben Backx.
  -->
 
-
 <module name="Checker">
 
     <property name="fileExtensions" value="java"/>

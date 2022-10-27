@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added Job Catalog unit testing.">
+    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added Modified jobList Data Text File.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/Date.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/JackHammer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/JackHammer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/Job.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/LabAssignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/LabAssignment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/PlanningApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/PlanningApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/Torch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/Torch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/checkstyle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/checkstyle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +161,7 @@
       <workItem from="1666123564405" duration="1160000" />
       <workItem from="1666169068798" duration="28000" />
       <workItem from="1666620187296" duration="2486000" />
+      <workItem from="1667133194093" duration="1532000" />
     </task>
     <task id="LOCAL-00001" summary="Added .gitignore file.">
       <created>1665943191995</created>
@@ -238,7 +247,42 @@
       <option name="project" value="LOCAL" />
       <updated>1666362233463</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added Job List text file to read from.">
+      <created>1666442055295</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666442055295</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added Reading from Given Text file Data.">
+      <created>1666529804122</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666529804122</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added Interface of PowerSupply.">
+      <created>1666616251794</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666616251794</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added modified .gitignore file.">
+      <created>1666702680165</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666702680165</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added Modified jobList Data Text File.">
+      <created>1666789106472</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666789106472</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +310,12 @@
     <MESSAGE value="Added Date and Address unit testing." />
     <MESSAGE value="Added Equipment unit testing." />
     <MESSAGE value="Added Job Catalog unit testing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Job Catalog unit testing." />
+    <MESSAGE value="Added Job List text file to read from." />
+    <MESSAGE value="Added Reading from Given Text file Data." />
+    <MESSAGE value="Added Interface of PowerSupply." />
+    <MESSAGE value="Added modified .gitignore file." />
+    <MESSAGE value="Added Modified jobList Data Text File." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Modified jobList Data Text File." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
