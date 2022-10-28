@@ -1,4 +1,6 @@
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -65,12 +67,16 @@ public class PlanningApplication {
 
     }
 
+    /**
+     * Method to read from file. Fills the List with Jobs that are read from file.
+     */
     public static void readData(){
-        try(Scanner in = new Scanner(new File("joblist.txt"))){
-            while(in.hasNextLine()) {
-                Address address = new Address(in.nextLine());
-                String description = in.nextLine();
-                Scanner instruments = new Scanner(in.nextLine());
+        try(BufferedReader reader = new BufferedReader(new FileReader("joblist.txt"))){
+            String line;
+            while((line = reader.readLine()) != null) {
+                Address address = new Address(line);
+                String description = reader.readLine();
+                Scanner instruments = new Scanner(reader.readLine());
                 instruments.useDelimiter("; ");
                 ArrayList<Equipment> equipmentArrayList = new ArrayList<>();
                 while (instruments.hasNext()) {
@@ -84,7 +90,7 @@ public class PlanningApplication {
                         case "Torch" -> equipmentArrayList.add(new Torch(instrument.next()));
                     }
                 }
-                Date date = new Date(in.nextLine());
+                Date date = new Date(reader.readLine());
                 Job.listOfJobs.add(new Job(address, description, equipmentArrayList, date));
             }
         } catch (IOException ignored){}
