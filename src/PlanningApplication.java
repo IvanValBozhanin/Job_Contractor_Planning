@@ -14,20 +14,17 @@ public class PlanningApplication {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         readData();
-        for (Job job :
-                Job.listOfJobs) {
-            System.out.println(job);
-        }
-        /*String prompt = "1 - Show all jobs in the catalog.\n2 - Add a new job.\n" +
+        String prompt = "1 - Show all jobs in the catalog.\n2 - Add a new job.\n" +
                 "3-6 - To be implemented.\n7 - Quit application.\n";
         System.out.println(prompt);
 
         int command = in.nextInt();
-        JobCatalog jobCatalog = new JobCatalog();
         while(command != 7){
             if(command == 1){
                 System.out.println("================");
-                System.out.println(jobCatalog.toString());
+                Job.listOfJobs.stream()
+                        .map(Job::toString)
+                        .forEach(System.out::println);
                 System.out.println("================\n");
             }
             else if(command == 2){
@@ -57,14 +54,12 @@ public class PlanningApplication {
                     int year = in.nextInt();
                     job = new Job(address, des, new ArrayList<>(), new Date(day, month, year));
                 }
-                jobCatalog.addJob(job);
+                Job.listOfJobs.add(job);
                 System.out.println("Job Successfully Added!\n");
             }
             System.out.println(prompt);
             command = in.nextInt();
         }
-        */
-
     }
 
     /**
