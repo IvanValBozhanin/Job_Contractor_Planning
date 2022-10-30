@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -60,6 +57,30 @@ public class PlanningApplication {
             System.out.println(prompt);
             command = in.nextInt();
         }
+        saveData();
+    }
+
+    public static void saveData() {
+        try(PrintWriter writer = new PrintWriter("joblist1.txt")){
+            for (Job job: Job.listOfJobs) {
+                writer.write(job.getLocation().getStreet() + "; ");
+                writer.write(job.getLocation().getNumber() + "; ");
+                writer.write(job.getLocation().getZipCode() + "; ");
+                writer.write(job.getLocation().getCity() + "\n");
+                writer.write(job.getDescription() + "\n");
+                for (Equipment eq :
+                        job.getRequiredEquipment()) {
+                    if(eq instanceof Torch) writer.write("Torch, ");
+                    if(eq instanceof JackHammer) writer.write("JackHammer, ");
+                    if(eq instanceof ScaffoldingTower) writer.write("Scaffolding, ");
+                    if(eq instanceof ConcreteMixer) writer.write("ConcreteMixer, ");
+                    writer.write(eq.getRequirements() + "; ");
+                }
+                writer.write("\n" + job.getPlannedDate().getDay()+"-");
+                writer.write(job.getPlannedDate().getMonth()+"-");
+                writer.write(job.getPlannedDate().getYear() + "\n");
+            }
+        } catch (IOException ignored){}
     }
 
     /**
@@ -72,7 +93,7 @@ public class PlanningApplication {
                 Address address = new Address(line);
                 String description = reader.readLine();
                 Scanner instruments = new Scanner(reader.readLine());
-                instruments.useDelimiter("; ");
+                instruments.useDelimiter("; |;");
                 ArrayList<Equipment> equipmentArrayList = new ArrayList<>();
                 while (instruments.hasNext()) {
                     Scanner instrument = new Scanner(instruments.next());
