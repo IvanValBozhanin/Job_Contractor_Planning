@@ -45,13 +45,8 @@ public class PlanningApplication {
                     System.out.print("Job description: ");
                     in.nextLine();
                     String des = in.nextLine();
-                    System.out.print("Day: ");
-                    int day = in.nextInt();
-                    System.out.print("Month: ");
-                    int month = in.nextInt();
-                    System.out.print("Year: ");
-                    int year = in.nextInt();
-                    job = new Job(address, des, new ArrayList<>(), new Date(day, month, year));
+                    Date date = scanDate(in);
+                    job = new Job(address, des, new ArrayList<>(), date);
                 }
                 Job.listOfJobs.add(job);
                 System.out.println("Job Successfully Added!\n");
@@ -61,10 +56,45 @@ public class PlanningApplication {
                 int remove = in.nextInt();
                 Job.listOfJobs.removeIf(x -> x.getJobNumber()==remove);
             }
+            else if(command == 4){
+                System.out.println("Enter job number to have its date changed: ");
+                int change = in.nextInt();
+                Date date = scanDate(in);
+                for(int i = 0;i<Job.listOfJobs.size();++i){
+                    if(Job.listOfJobs.get(i).getJobNumber() == change){
+                        Job.listOfJobs.get(i).getPlannedDate().setDay(date.getDay());
+                        Job.listOfJobs.get(i).getPlannedDate().setMonth(date.getMonth());
+                        Job.listOfJobs.get(i).getPlannedDate().setYear(date.getYear());
+                        break;
+                    }
+                }
+            } else if (command == 5) {
+                Date date = scanDate(in);
+                Job.listOfJobs.stream()
+                        .filter(x -> x.getPlannedDate().equals(date))
+                        .forEach(System.out::println);
+            } else if(command == 6){
+                Date date = scanDate(in);
+                Job.listOfJobs.stream()
+                        .filter(x -> x.getPlannedDate().equals(date))
+                        .map(Job::getRequiredEquipment)
+                        .distinct()
+                        .forEach(System.out::println);
+            }
             System.out.println(prompt);
             command = in.nextInt();
         }
         saveData();
+    }
+
+    public static Date scanDate(Scanner in) {
+        System.out.print("Day: ");
+        int day = in.nextInt();
+        System.out.print("Month: ");
+        int month = in.nextInt();
+        System.out.print("Year: ");
+        int year = in.nextInt();
+        return new Date(day, month, year);
     }
 
     public static void saveData() {
