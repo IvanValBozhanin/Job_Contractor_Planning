@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Modified readData method - BufferedReader instead of Scanner for each line.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Modified readData method - BufferedReader instead of Scanner for each line." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +151,7 @@
       <workItem from="1666123564405" duration="1160000" />
       <workItem from="1666169068798" duration="28000" />
       <workItem from="1666620187296" duration="2486000" />
-      <workItem from="1667133194093" duration="2688000" />
+      <workItem from="1667133194093" duration="2930000" />
     </task>
     <task id="LOCAL-00001" summary="Added .gitignore file.">
       <created>1665943191995</created>
@@ -288,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666962519400</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Modified readData method - BufferedReader instead of Scanner for each line.">
+      <created>1667049708635</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1667049708635</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
