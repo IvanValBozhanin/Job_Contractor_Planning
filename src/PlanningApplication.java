@@ -12,7 +12,9 @@ public class PlanningApplication {
         Scanner in = new Scanner(System.in);
         readData();
         String prompt = "1 - Show all jobs in the catalog.\n2 - Add a new job.\n" +
-                "3-6 - To be implemented.\n7 - Quit application.\n";
+                "3 - Remove a job from list.\n" +
+                "4 - Change date of existing job.\n" +
+                "5-6 - To be implemented.\n7 - Quit application.\n";
         System.out.println(prompt);
 
         int command = in.nextInt();
@@ -54,6 +56,11 @@ public class PlanningApplication {
                 Job.listOfJobs.add(job);
                 System.out.println("Job Successfully Added!\n");
             }
+            else if(command == 3){
+                System.out.println("Enter job number to be removed: ");
+                int remove = in.nextInt();
+                Job.listOfJobs.removeIf(x -> x.getJobNumber()==remove);
+            }
             System.out.println(prompt);
             command = in.nextInt();
         }
@@ -61,7 +68,7 @@ public class PlanningApplication {
     }
 
     public static void saveData() {
-        try(PrintWriter writer = new PrintWriter("joblist1.txt")){
+        try(PrintWriter writer = new PrintWriter("joblist.txt")){
             for (Job job: Job.listOfJobs) {
                 writer.write(job.getLocation().getStreet() + "; ");
                 writer.write(job.getLocation().getNumber() + "; ");
