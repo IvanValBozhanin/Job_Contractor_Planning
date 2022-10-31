@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added Remove from list of Jobs query.">
+    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added query that changes date of a given Job, one that returns all jobs with given a date, and one that returns all distinct equipment given a date.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConcreteMixer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConcreteMixer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JackHammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JackHammer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JobCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JobCatalog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlanningApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlanningApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PowerSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PowerSupply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScaffoldingTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScaffoldingTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Torch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Torch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +65,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -156,7 +165,9 @@
       <workItem from="1666123564405" duration="1160000" />
       <workItem from="1666169068798" duration="28000" />
       <workItem from="1666620187296" duration="2486000" />
-      <workItem from="1667133194093" duration="5620000" />
+      <workItem from="1667133194093" duration="5815000" />
+      <workItem from="1667331474000" duration="72000" />
+      <workItem from="1667331555537" duration="3400000" />
     </task>
     <task id="LOCAL-00001" summary="Added .gitignore file.">
       <created>1665943191995</created>
@@ -319,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667137561265</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added query that changes date of a given Job, one that returns all jobs with given a date, and one that returns all distinct equipment given a date.">
+      <created>1667139000644</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1667139000644</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +374,8 @@
     <MESSAGE value="Modified readData method - BufferedReader instead of Scanner for each line." />
     <MESSAGE value="Added writeData method to save the data of Jobs after termination of the program." />
     <MESSAGE value="Added Remove from list of Jobs query." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Remove from list of Jobs query." />
+    <MESSAGE value="Added query that changes date of a given Job, one that returns all jobs with given a date, and one that returns all distinct equipment given a date." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added query that changes date of a given Job, one that returns all jobs with given a date, and one that returns all distinct equipment given a date." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
