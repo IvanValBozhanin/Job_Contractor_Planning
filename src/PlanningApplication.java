@@ -9,7 +9,7 @@ public class PlanningApplication {
      */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        JobCatalog.readData(in);
+        JobCatalog.readData();
         String prompt = "1 - Show all jobs in the catalog.\n2 - Add a new job.\n" +
                 "3 - Remove a job from list.\n4 - Change date of existing job.\n" +
                 "5 - Print jobs by date.\n6 - Print required materials by date.\n" +
