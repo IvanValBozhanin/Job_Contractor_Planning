@@ -4,7 +4,7 @@ JackHammer, A hardened chisel for reinforced floors; ConcreteMixer, None;
 1-1-2000
 Cornelis Drebbelweg; 5; 2628CM; Delft
 Repair the eastern stairway to the 1st floor.
-Scaffolding, At least 5 metres tall; 
+Scaffolding, At least 5 metres tall; Torch, None; 
 23-10-2021
 van Mourik Broekmanweg; 6; 2628XE; Delft
 Repair a broken doorknob at office 3W.560.
