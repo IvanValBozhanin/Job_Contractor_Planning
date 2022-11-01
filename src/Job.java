@@ -9,7 +9,6 @@ public class Job {
     private List<Equipment> requiredEquipment;
     private Date plannedDate;
     private static int jobTotal = 0;
-    protected static ArrayList<Job> listOfJobs = new ArrayList<>();
 
     /**
      * Constructor for the Job object

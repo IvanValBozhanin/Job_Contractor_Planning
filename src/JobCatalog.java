@@ -8,19 +8,27 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class JobCatalog {
-    private List<Job> jobs;
+    public static List<Job> listOfJobs;
 
     /**
      * Constructor for the Job Catalog that takes no paramteres
      */
     public JobCatalog() {
-        this.jobs = new ArrayList<>();
+        this.listOfJobs = new ArrayList<>();
+    }
+
+    /**
+     * Getter for the List of jobs
+     * @return the list of jobs
+     */
+    public List<Job> getJobs() {
+        return listOfJobs;
     }
 
     /**
      * Method to read from file. Fills the List with Jobs that are read from file.\
      */
-    public static void readData(){
+    public void readData(){
         try(BufferedReader reader = new BufferedReader(new FileReader("joblist.txt"))){
             String line;
             while((line = reader.readLine()) != null) {
@@ -45,7 +53,7 @@ public class JobCatalog {
                     }
                 }
                 Date date = new Date(reader.readLine());
-                Job.listOfJobs.add(new Job(address, description, equipmentArrayList, date));
+                listOfJobs.add(new Job(address, description, equipmentArrayList, date));
             }
         } catch (IOException ignored){}
     }
@@ -54,16 +62,16 @@ public class JobCatalog {
      * The fourth option of the menu (Change date of existing job)
      * @param in - the scanner we use to read the date and job
      */
-    public static void option4(Scanner in){
+    public void option4(Scanner in){
         System.out.println("Enter job number to have its date changed: ");
         int change = in.nextInt();
-        Date date = Date.scanDate(in);
-        for (int i = 0; i < Job.listOfJobs.size(); ++i) {
-            if (Job.listOfJobs.get(i).getJobNumber() == change) {
-                Job.listOfJobs.get(i).getPlannedDate().setDay(date.getDay());
-                Job.listOfJobs.get(i).getPlannedDate().setMonth(date.getMonth());
-                Job.listOfJobs.get(i).getPlannedDate().setYear(date.getYear());
-                break;
+        Date date = new Date(new Scanner(in.next()));
+        for (Job listOfJob : listOfJobs) {
+            System.out.println(listOfJob.getJobNumber());
+            if (listOfJob.getJobNumber() == change) {
+                listOfJob.getPlannedDate().setDay(date.getDay());
+                listOfJob.getPlannedDate().setMonth(date.getMonth());
+                listOfJob.getPlannedDate().setYear(date.getYear());
             }
         }
     }
@@ -72,7 +80,7 @@ public class JobCatalog {
      * The second option of the menu(Adding a new job)
      * @param in - the scanner to read from
      */
-    public static void option2(Scanner in) {
+    public void option2(Scanner in) {
         System.out.println("Please enter the following information correctly:");
         Address address;
         Job job;
@@ -88,18 +96,18 @@ public class JobCatalog {
         System.out.print("Job description: ");
         in.nextLine();
         String des = in.nextLine();
-        Date date = Date.scanDate(in);
+        Date date = new Date(in);
         job = new Job(address, des, new ArrayList<>(), date);
-        Job.listOfJobs.add(job);
+        listOfJobs.add(job);
         System.out.println("Job Successfully Added!\n");
     }
 
     /**
      * Method to write to file with the jobs form the current catalogue.
      */
-    public static void saveData() {
+    public void saveData() {
         try(PrintWriter writer = new PrintWriter("joblist.txt")){
-            for (Job job: Job.listOfJobs) {
+            for (Job job: listOfJobs) {
                 writer.write(job.getLocation().getStreet() + "; ");
                 writer.write(job.getLocation().getNumber() + "; ");
                 writer.write(job.getLocation().getZipCode() + "; ");
@@ -127,7 +135,7 @@ public class JobCatalog {
      * @param job - the job to be added to the catalogue
      */
     public void addJob(Job job){
-        jobs.add(job);
+        listOfJobs.add(job);
     }
 
     /**
@@ -140,7 +148,7 @@ public class JobCatalog {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         JobCatalog that = (JobCatalog) o;
-        return Objects.equals(jobs, that.jobs);
+        return Objects.equals(listOfJobs, that.listOfJobs);
     }
 
     /**
@@ -149,7 +157,7 @@ public class JobCatalog {
      */
     @Override
     public int hashCode() {
-        return Objects.hash(jobs);
+        return Objects.hash(listOfJobs);
     }
 
     /**
@@ -159,7 +167,7 @@ public class JobCatalog {
     @Override
     public String toString() {
         return "JobCatalog{" +
-                "jobs=" + jobs +
+                "jobs=" + listOfJobs +
                 '}';
     }
 }

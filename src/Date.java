@@ -34,14 +34,14 @@ public class Date {
      * @param in - the string to be scanned
      * @return a new date with info from the field
      */
-    public static Date scanDate(Scanner in) {
+    public Date (Scanner in) {
+        in.useDelimiter("-");
         System.out.print("Day: ");
-        int day = in.nextInt();
+        this.day = Integer.parseInt(in.next());
         System.out.print("Month: ");
-        int month = in.nextInt();
+        this.month = Integer.parseInt(in.next());
         System.out.print("Year: ");
-        int year = in.nextInt();
-        return new Date(day, month, year);
+        this.year = Integer.parseInt(in.next());
     }
 
     /**

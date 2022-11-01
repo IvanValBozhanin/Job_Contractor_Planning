@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added query that changes date of a given Job, one that returns all jobs with given a date, and one that returns all distinct equipment given a date.">
+    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added JavaDoc documentation.">
+      <change afterPath="$PROJECT_DIR$/test/JobTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConcreteMixer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConcreteMixer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/joblist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/joblist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/Date.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/Job.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/JobCatalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/JobCatalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/PlanningApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/PlanningApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/joblist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/joblist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LabAssignment/DateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LabAssignment/DateTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LabAssignment/EquipmentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LabAssignment/EquipmentTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LabAssignment/JobCatalogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LabAssignment/JobCatalogTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JackHammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JackHammer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Job.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JobCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JobCatalog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlanningApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlanningApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PowerSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PowerSupply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScaffoldingTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScaffoldingTower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Torch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Torch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/DateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/EquipmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EquipmentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/JobCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/JobCatalogTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -82,7 +88,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PlanningApplication">
+  <component name="RunManager" selected="JUnit.All in LabAssignment">
     <configuration name="PlanningApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PlanningApplication" />
       <module name="LabAssignment" />
@@ -90,38 +96,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in LabAssignment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LabAssignment" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DateTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EquipmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LabAssignment" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EquipmentTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JobCatalogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JobCatalogTest.readData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LabAssignment" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JobCatalogTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="readData" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobCatalogTest.testHashCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JobCatalogTest.testOption4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LabAssignment" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JobCatalogTest" />
-      <option name="METHOD_NAME" value="testHashCode" />
+      <option name="METHOD_NAME" value="testOption4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobCatalogTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LabAssignment" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JobCatalogTest" />
+      <option name="METHOD_NAME" value="testToString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,18 +136,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.PlanningApplication" />
-      <item itemvalue="JUnit.DateTest" />
-      <item itemvalue="JUnit.JobCatalogTest" />
-      <item itemvalue="JUnit.JobCatalogTest.testHashCode" />
-      <item itemvalue="JUnit.EquipmentTest" />
+      <item itemvalue="JUnit.All in LabAssignment" />
+      <item itemvalue="JUnit.JobCatalogTest.readData" />
+      <item itemvalue="JUnit.JobCatalogTest.testOption4" />
+      <item itemvalue="JUnit.JobCatalogTest.testToString" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in LabAssignment" />
+        <item itemvalue="JUnit.JobCatalogTest.testOption4" />
         <item itemvalue="Application.PlanningApplication" />
-        <item itemvalue="JUnit.JobCatalogTest.testHashCode" />
-        <item itemvalue="JUnit.JobCatalogTest" />
-        <item itemvalue="JUnit.DateTest" />
-        <item itemvalue="JUnit.EquipmentTest" />
+        <item itemvalue="JUnit.JobCatalogTest.testToString" />
+        <item itemvalue="JUnit.JobCatalogTest.readData" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +174,7 @@
       <workItem from="1666620187296" duration="2486000" />
       <workItem from="1667133194093" duration="5815000" />
       <workItem from="1667331474000" duration="72000" />
-      <workItem from="1667331555537" duration="3400000" />
+      <workItem from="1667331555537" duration="10474000" />
     </task>
     <task id="LOCAL-00001" summary="Added .gitignore file.">
       <created>1665943191995</created>
@@ -337,7 +344,77 @@
       <option name="project" value="LOCAL" />
       <updated>1667139000644</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added JavaDoc documentation.">
+      <created>1667248792121</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1667248792121</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added JavaDoc documentation.">
+      <created>1667248795136</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1667248795136</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added JavaDoc documentation.">
+      <created>1667248797807</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1667248797807</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added JavaDoc documentation.">
+      <created>1667248861810</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1667248861810</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added JavaDoc documentation.">
+      <created>1667248930663</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1667248930663</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added JavaDoc documentation.">
+      <created>1667248935526</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1667248935526</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added JavaDoc documentation.">
+      <created>1667248943149</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1667248943149</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Added JavaDoc documentation.">
+      <created>1667248951087</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1667248951087</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added JavaDoc documentation.">
+      <created>1667248955449</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1667248955449</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added JavaDoc documentation.">
+      <created>1667248960028</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1667248960028</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,16 +452,19 @@
     <MESSAGE value="Added writeData method to save the data of Jobs after termination of the program." />
     <MESSAGE value="Added Remove from list of Jobs query." />
     <MESSAGE value="Added query that changes date of a given Job, one that returns all jobs with given a date, and one that returns all distinct equipment given a date." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added query that changes date of a given Job, one that returns all jobs with given a date, and one that returns all distinct equipment given a date." />
+    <MESSAGE value="Added JavaDoc documentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added JavaDoc documentation." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LabAssignment$All_in_LabAssignment.ic" NAME="All in LabAssignment Coverage Results" MODIFIED="1667341509309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/LabAssignment$AddressTest.ic" NAME="AddressTest Coverage Results" MODIFIED="1664549603080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>AddressTest</FILTER>
       <FILTER>*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/LabAssignment$JobTest.ic" NAME="JobTest Coverage Results" MODIFIED="1667335841540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
