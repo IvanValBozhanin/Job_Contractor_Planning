@@ -1,8 +1,11 @@
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,8 +18,8 @@ class JobCatalogTest {
     private static List<Equipment> requirements;
     private static Job job1;
 
-    @BeforeAll
-    public static void init(){
+    @BeforeEach
+    public void init(){
         date1 = new Date(30, 03, 2003);
         requirements = new ArrayList<>();
         requirements.add(new Torch("a torch"));
@@ -40,16 +43,6 @@ class JobCatalogTest {
     }
 
     @Test
-    void testEqualsFail() {
-        JobCatalog jobCatalog = new JobCatalog();
-        jobCatalog.addJob(job1);
-        Job job2 = new Job(address, des2, requirements, date1);
-        JobCatalog jobCatalog1 = new JobCatalog();
-        jobCatalog1.addJob(job2);
-        assertNotEquals(jobCatalog, jobCatalog1);
-    }
-
-    @Test
     void testHashCode() {
         JobCatalog jobCatalog = new JobCatalog();
         jobCatalog.addJob(job1);
@@ -62,6 +55,69 @@ class JobCatalogTest {
     void testToString() {
         JobCatalog jobCatalog = new JobCatalog();
         jobCatalog.addJob(job1);
-        assertEquals("Job{jobNumber=1, location=Address{street='Stieltjesweg', number=14, zipCode='2628CK', city='Delft'}, description='A job with number 1', requiredEquipment=[Torch{Equipment{requirements='a torch'}}], plannedDate=Date{day=30, month=3, year=2003}}", job1.toString());
+        assertTrue("Job{jobNumber=1, location=Address{street='Stieltjesweg', number=14, zipCode='2628CK', city='Delft'}, description='A job with number 1', requiredEquipment=[Torch{Equipment{requirements='a torch'} Butane Gas power supply}], plannedDate=Date{day=30, month=3, year=2003}}".contains(job1.toString().substring(20)));
     }
+
+    @Test
+    void testDataFromScanner(){
+        Address address1 = new Address("Mekelweg; 4; 2628CD; Delft");
+        assertNotNull(address1);
+    }
+
+    @Test
+    void readData() {
+        JobCatalog jobs = new JobCatalog();
+        jobs.readData();
+        assertTrue(JobCatalog.listOfJobs.size()>0);
+    }
+
+    @Test
+    void saveData() {
+        JobCatalog catalog = new JobCatalog();
+        catalog.readData();
+        try(Scanner in = new Scanner(new File("joblist.txt"))){
+            assertTrue(in.hasNext());
+        } catch (IOException e) {
+            e.getMessage();
+        }
+    }
+
+    @Test
+    void testOption4() {
+        JobCatalog catalog = new JobCatalog();
+        catalog.readData();
+        try(Scanner in = new Scanner(new File("joblist.txt"))){
+            assertTrue(in.hasNext());
+        } catch (IOException e) {
+            e.getMessage();
+        }
+        catalog.option4(new Scanner("8 21-03-2021"));
+        assertEquals(21, catalog.getJobs().get(0).getPlannedDate().getDay());
+    }
+
+    @Test
+    void testOption2() {
+        JobCatalog catalog = new JobCatalog();
+        int sizeOld = catalog.getJobs().size();
+        catalog.option2(new Scanner("St 2 dffe12 Delft\nVery important\n23-10-2010"));
+        assertEquals(sizeOld + 1, catalog.getJobs().size());
+    }
+
+    @Test
+    void testSaveData() {
+        JobCatalog catalog = new JobCatalog();
+        catalog.readData();
+        try(Scanner in = new Scanner(new File("joblist.txt"))){
+            assertTrue(in.hasNext());
+        } catch (IOException e) {
+            e.getMessage();
+        }
+        catalog.saveData();
+        try(Scanner in = new Scanner(new File("joblist.txt"))){
+            assertTrue(in.hasNext());
+        } catch (IOException e) {
+            e.getMessage();
+        }
+    }
+
 }
