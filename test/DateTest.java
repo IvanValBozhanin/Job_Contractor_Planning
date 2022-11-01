@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Scanner;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class DateTest {
@@ -41,5 +43,35 @@ class DateTest {
     @Test
     void getYear() {
         assertEquals(2003, dt.getYear());
+    }
+
+    @Test
+    void readFromDataScanner(){
+        dt = new Date("23-10-2021");
+        assertNotNull(dt);
+    }
+
+    @Test
+    void setDay() {
+        dt.setDay(30);
+        assertEquals(30, dt.getDay());
+    }
+
+    @Test
+    void setMonth() {
+        dt.setMonth(4);
+        assertEquals(4, dt.getMonth());
+    }
+
+    @Test
+    void setYear() {
+        dt.setYear(2009);
+        assertEquals(2009, dt.getYear());
+    }
+
+    @Test
+    void scanDateOK() {
+        Date date = new Date(new Scanner("23-10-2021"));
+        assertEquals(23, date.getDay());
     }
 }
