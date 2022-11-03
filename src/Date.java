@@ -1,7 +1,7 @@
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Date {
+public class Date implements Comparable<Date>{
     private int day;
     private int month;
     private int year;
@@ -125,5 +125,20 @@ public class Date {
      */
     public void setYear(int year) {
         this.year = year;
+    }
+
+    /**
+     * CompareTo method for Date class
+     * @param o the object to be compared.
+     * @return integer of the comparing result
+     */
+    @Override
+    public int compareTo(Date o) {
+        if(this.year != o.year){
+            return Integer.compare(this.year, o.year);
+        } else if (this.month != o.month) {
+            return Integer.compare(this.month, o.month);
+        }
+        return Integer.compare(this.day, o.day);
     }
 }

@@ -1,3 +1,4 @@
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class PlanningApplication {
@@ -22,6 +23,7 @@ public class PlanningApplication {
                 case 1 -> {
                     System.out.println("================");
                     JobCatalog.listOfJobs.stream()
+                            .sorted(Comparator.comparing(Job::getPlannedDate))
                             .map(Job::toString)
                             .forEach(System.out::println);
                     System.out.println("================\n");

@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added JavaDoc documentation.">
-      <change afterPath="$PROJECT_DIR$/test/JobTest.java" afterDir="false" />
+    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added JUnit Tests to reach 100% line coverage.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/joblist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/joblist.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/Date.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/Job.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/JobCatalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/JobCatalog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/PlanningApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/PlanningApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/joblist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/joblist.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/LabAssignment/DateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LabAssignment/DateTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/LabAssignment/EquipmentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LabAssignment/EquipmentTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/LabAssignment/JobCatalogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LabAssignment/JobCatalogTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JobCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JobCatalog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlanningApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlanningApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/DateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/EquipmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EquipmentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/JobCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/JobCatalogTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,28 +38,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
-    "create.test.in.the.same.root": "true",
-    "extract.method.default.visibility": "public",
-    "last_opened_file_path": "C:/Users/Ivan/Downloads/Tutorial_6/tutorial_6",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;public&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ivan/Downloads/Trains/Trains&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -88,7 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in LabAssignment">
+  <component name="RunManager" selected="Application.PlanningApplication">
     <configuration name="PlanningApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PlanningApplication" />
       <module name="LabAssignment" />
@@ -143,9 +129,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PlanningApplication" />
         <item itemvalue="JUnit.All in LabAssignment" />
         <item itemvalue="JUnit.JobCatalogTest.testOption4" />
-        <item itemvalue="Application.PlanningApplication" />
         <item itemvalue="JUnit.JobCatalogTest.testToString" />
         <item itemvalue="JUnit.JobCatalogTest.readData" />
       </list>
@@ -174,7 +160,9 @@
       <workItem from="1666620187296" duration="2486000" />
       <workItem from="1667133194093" duration="5815000" />
       <workItem from="1667331474000" duration="72000" />
-      <workItem from="1667331555537" duration="10474000" />
+      <workItem from="1667331555537" duration="10792000" />
+      <workItem from="1667399654376" duration="2272000" />
+      <workItem from="1667497152741" duration="952000" />
     </task>
     <task id="LOCAL-00001" summary="Added .gitignore file.">
       <created>1665943191995</created>
@@ -414,7 +402,42 @@
       <option name="project" value="LOCAL" />
       <updated>1667248960028</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added JUnit Tests to reach 100% line coverage.">
+      <created>1667343397861</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1667343397861</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Added JUnit Tests to reach 100% line coverage.">
+      <created>1667343402011</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1667343402011</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added JUnit Tests to reach 100% line coverage.">
+      <created>1667343404543</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1667343404543</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Added JUnit Tests to reach 100% line coverage.">
+      <created>1667343409080</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1667343409080</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Added JUnit Tests to reach 100% line coverage.">
+      <created>1667343417391</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1667343417391</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,14 +476,15 @@
     <MESSAGE value="Added Remove from list of Jobs query." />
     <MESSAGE value="Added query that changes date of a given Job, one that returns all jobs with given a date, and one that returns all distinct equipment given a date." />
     <MESSAGE value="Added JavaDoc documentation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JavaDoc documentation." />
+    <MESSAGE value="Added JUnit Tests to reach 100% line coverage." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added JUnit Tests to reach 100% line coverage." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LabAssignment$All_in_LabAssignment.ic" NAME="All in LabAssignment Coverage Results" MODIFIED="1667341509309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/LabAssignment$All_in_LabAssignment.ic" NAME="All in LabAssignment Coverage Results" MODIFIED="1667343357319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/LabAssignment$AddressTest.ic" NAME="AddressTest Coverage Results" MODIFIED="1664549603080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>AddressTest</FILTER>
       <FILTER>*</FILTER>
