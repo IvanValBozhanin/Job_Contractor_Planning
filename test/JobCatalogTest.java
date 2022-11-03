@@ -52,10 +52,11 @@ class JobCatalogTest {
     }
 
     @Test
-    void testToString() {
+    void testToString1() {
         JobCatalog jobCatalog = new JobCatalog();
         jobCatalog.addJob(job1);
-        assertTrue("Job{jobNumber=1, location=Address{street='Stieltjesweg', number=14, zipCode='2628CK', city='Delft'}, description='A job with number 1', requiredEquipment=[Torch{Equipment{requirements='a torch'} Butane Gas power supply}], plannedDate=Date{day=30, month=3, year=2003}}".contains(job1.toString().substring(20)));
+        assertEquals("JobCatalog{jobs=[Job{jobNumber=23, location=Address{street='Stieltjesweg', number=14, zipCode='2628CK', city='Delft'}, description='A job with number 1', requiredEquipment=[Torch{Equipment{requirements='a torch'} Butane Gas power supply}], plannedDate=Date{day=30, month=3, year=2003}}]}"
+                , jobCatalog.toString());
     }
 
     @Test

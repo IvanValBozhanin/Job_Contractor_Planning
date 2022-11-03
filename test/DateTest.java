@@ -74,4 +74,11 @@ class DateTest {
         Date date = new Date(new Scanner("23-10-2021"));
         assertEquals(23, date.getDay());
     }
+
+
+    @Test
+    void compareTo() {
+        Date date1 = new Date(new Scanner("23-10-2021"));
+        assertTrue(date1.compareTo(dt) > 0);
+    }
 }

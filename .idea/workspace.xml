@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added JUnit Tests to reach 100% line coverage.">
+    <list default="true" id="5cf16493-070c-4e81-8031-472744e86189" name="Changes" comment="Added Comparable&lt;Date&gt; implementation to the Date class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/joblist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/joblist.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlanningApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlanningApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/Date.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/PlanningApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/PlanningApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabAssignment/joblist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabAssignment/joblist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/JobCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/JobCatalogTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PlanningApplication">
+  <component name="RunManager" selected="JUnit.DateTest.compareTo">
     <configuration name="PlanningApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PlanningApplication" />
       <module name="LabAssignment" />
@@ -90,11 +91,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobCatalogTest.readData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DateTest.compareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LabAssignment" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JobCatalogTest" />
-      <option name="METHOD_NAME" value="readData" />
+      <option name="MAIN_CLASS_NAME" value="DateTest" />
+      <option name="METHOD_NAME" value="compareTo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,11 +111,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobCatalogTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JobCatalogTest.testToString1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LabAssignment" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JobCatalogTest" />
-      <option name="METHOD_NAME" value="testToString" />
+      <option name="METHOD_NAME" value="testToString1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,18 +123,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.PlanningApplication" />
+      <item itemvalue="JUnit.DateTest.compareTo" />
+      <item itemvalue="JUnit.JobCatalogTest.testToString1" />
       <item itemvalue="JUnit.All in LabAssignment" />
-      <item itemvalue="JUnit.JobCatalogTest.readData" />
       <item itemvalue="JUnit.JobCatalogTest.testOption4" />
-      <item itemvalue="JUnit.JobCatalogTest.testToString" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PlanningApplication" />
+        <item itemvalue="JUnit.DateTest.compareTo" />
         <item itemvalue="JUnit.All in LabAssignment" />
+        <item itemvalue="JUnit.JobCatalogTest.testToString1" />
+        <item itemvalue="Application.PlanningApplication" />
         <item itemvalue="JUnit.JobCatalogTest.testOption4" />
-        <item itemvalue="JUnit.JobCatalogTest.testToString" />
-        <item itemvalue="JUnit.JobCatalogTest.readData" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +163,7 @@
       <workItem from="1667331474000" duration="72000" />
       <workItem from="1667331555537" duration="10792000" />
       <workItem from="1667399654376" duration="2272000" />
-      <workItem from="1667497152741" duration="952000" />
+      <workItem from="1667497152741" duration="1254000" />
     </task>
     <task id="LOCAL-00001" summary="Added .gitignore file.">
       <created>1665943191995</created>
@@ -437,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667343417391</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Added Comparable&lt;Date&gt; implementation to the Date class.">
+      <created>1667498158857</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1667498158857</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,14 +485,15 @@
     <MESSAGE value="Added query that changes date of a given Job, one that returns all jobs with given a date, and one that returns all distinct equipment given a date." />
     <MESSAGE value="Added JavaDoc documentation." />
     <MESSAGE value="Added JUnit Tests to reach 100% line coverage." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JUnit Tests to reach 100% line coverage." />
+    <MESSAGE value="Added Comparable&lt;Date&gt; implementation to the Date class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Comparable&lt;Date&gt; implementation to the Date class." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LabAssignment$All_in_LabAssignment.ic" NAME="All in LabAssignment Coverage Results" MODIFIED="1667343357319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/LabAssignment$All_in_LabAssignment.ic" NAME="All in LabAssignment Coverage Results" MODIFIED="1667498374918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/LabAssignment$AddressTest.ic" NAME="AddressTest Coverage Results" MODIFIED="1664549603080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>AddressTest</FILTER>
       <FILTER>*</FILTER>
