@@ -32,7 +32,7 @@ public class Date implements Comparable<Date>{
     /**
      * Method for scanning the date from a line of text
      * @param in - the string to be scanned
-     * @return a new date with info from the field
+     * @return a new date with the given data
      */
     public Date (Scanner in) {
         in.useDelimiter("-");
@@ -134,11 +134,8 @@ public class Date implements Comparable<Date>{
      */
     @Override
     public int compareTo(Date o) {
-        if(this.year != o.year){
-            return Integer.compare(this.year, o.year);
-        } else if (this.month != o.month) {
-            return Integer.compare(this.month, o.month);
-        }
+        if(this.year != o.year) return Integer.compare(this.year, o.year);
+        if (this.month != o.month) return Integer.compare(this.month, o.month);
         return Integer.compare(this.day, o.day);
     }
 }

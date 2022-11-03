@@ -55,13 +55,12 @@ class JobCatalogTest {
     void testToString1() {
         JobCatalog jobCatalog = new JobCatalog();
         jobCatalog.addJob(job1);
-        assertEquals("JobCatalog{jobs=[Job{jobNumber=23, location=Address{street='Stieltjesweg', number=14, zipCode='2628CK', city='Delft'}, description='A job with number 1', requiredEquipment=[Torch{Equipment{requirements='a torch'} Butane Gas power supply}], plannedDate=Date{day=30, month=3, year=2003}}]}"
-                , jobCatalog.toString());
+        assertEquals("JobCatalog{jobs=[Job{jobNumber=23, location=Address[street=Stieltjesweg, number=14, zipCode=2628CK, city=Delft], description='A job with number 1', requiredEquipment=[Torch{Equipment{requirements='a torch'} Butane Gas power supply}], plannedDate=Date{day=30, month=3, year=2003}}]}", jobCatalog.toString());
     }
 
     @Test
     void testDataFromScanner(){
-        Address address1 = new Address("Mekelweg; 4; 2628CD; Delft");
+        Address address1 = new Address("Mekelweg", 4, "2628CD", "Delft");
         assertNotNull(address1);
     }
 

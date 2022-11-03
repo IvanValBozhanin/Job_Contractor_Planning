@@ -45,26 +45,26 @@ class AddressTest {
 
     @Test
     void getStreetSuccess() {
-        assertEquals("Stieltjesweg", address.getStreet());
+        assertEquals("Stieltjesweg", address.street());
     }
 
     @Test
     void getNumberSuccess() {
-        assertEquals(14, address.getNumber());
+        assertEquals(14, address.number());
     }
 
     @Test
     void getZipSuccess() {
-        assertEquals("2628CK", address.getZipCode());
+        assertEquals("2628CK", address.zipCode());
     }
 
     @Test
     void getCitySuccess() {
-        assertEquals("Delft", address.getCity());
+        assertEquals("Delft", address.city());
     }
 
     @Test
     void testToStringSuccess() {
-        assertEquals("Address{street='Stieltjesweg', number=14, zipCode='2628CK', city='Delft'}", address.toString());
+        assertEquals("Address[street=Stieltjesweg, number=14, zipCode=2628CK, city=Delft]", address.toString());
     }
 }

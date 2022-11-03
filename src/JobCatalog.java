@@ -32,7 +32,11 @@ public class JobCatalog {
         try(BufferedReader reader = new BufferedReader(new FileReader("joblist.txt"))){
             String line;
             while((line = reader.readLine()) != null) {
-                Address address = new Address(line);
+                Scanner addressScanner = new Scanner(line);
+                addressScanner.useDelimiter("; ");
+                Address address = new Address(addressScanner.next(),
+                        addressScanner.nextInt(), addressScanner.next(),
+                        addressScanner.next());
                 String description = reader.readLine();
                 Scanner instruments = new Scanner(reader.readLine());
                 instruments.useDelimiter("; |;");
@@ -108,10 +112,10 @@ public class JobCatalog {
     public void saveData() {
         try(PrintWriter writer = new PrintWriter("joblist.txt")){
             for (Job job: listOfJobs) {
-                writer.write(job.getLocation().getStreet() + "; ");
-                writer.write(job.getLocation().getNumber() + "; ");
-                writer.write(job.getLocation().getZipCode() + "; ");
-                writer.write(job.getLocation().getCity() + "\n");
+                writer.write(job.getLocation().street() + "; ");
+                writer.write(job.getLocation().number() + "; ");
+                writer.write(job.getLocation().zipCode() + "; ");
+                writer.write(job.getLocation().city() + "\n");
                 writer.write(job.getDescription() + "\n");
                 for (Equipment eq :
                         job.getRequiredEquipment()) {

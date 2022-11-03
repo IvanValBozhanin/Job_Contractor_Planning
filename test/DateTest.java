@@ -78,7 +78,7 @@ class DateTest {
 
     @Test
     void compareTo() {
-        Date date1 = new Date(new Scanner("23-10-2021"));
-        assertTrue(date1.compareTo(dt) > 0);
+        Date date1 = new Date(new Scanner("23-03-2003"));
+        assertTrue(date1.compareTo(dt) < 0);
     }
 }
